@@ -10,3 +10,9 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 -- override "s" binding to use Vim's normal mode "s" operation
 vim.keymap.del("n", "s")
+
+if vim.fn.executable("lazydocker") == 1 then
+  vim.keymap.set("n", "<leader>gd", function()
+    LazyVim.terminal("lazydocker", { esc_esc = false, ctrl_hjkl = false })
+  end, { desc = "Lazydocker" })
+end
