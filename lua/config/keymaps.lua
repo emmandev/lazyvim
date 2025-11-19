@@ -9,7 +9,7 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 -- override "s" binding to use Vim's normal mode "s" operation
-vim.keymap.del("n", "s")
+-- vim.keymap.del("n", "s")
 
 if vim.fn.executable("lazydocker") == 1 then
   vim.keymap.set("n", "<leader>gd", function()
