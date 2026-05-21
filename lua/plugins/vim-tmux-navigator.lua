@@ -1,7 +1,5 @@
+-- Provides the :TmuxNavigate* commands for seamless tmux/Neovim pane movement.
+-- The <C-h/j/k/l> key mappings are defined in lua/config/keymaps.lua.
 return {
   "christoomey/vim-tmux-navigator",
-  vim.keymap.set('n', 'C-h', ':TmuxNavigateLeft<CR>'),
-  vim.keymap.set('n', 'C-j', ':TmuxNavigateDown<CR>'),
-  vim.keymap.set('n', 'C-k', ':TmuxNavigateUp<CR>'),
-  vim.keymap.set('n', 'C-l', ':TmuxNavigateRight<CR>'),
 }
